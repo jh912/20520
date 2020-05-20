@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+	<script>
+		function show(){
+			//1.创建异步对象xhr
+			var xhr=new XMLHttpRequest();
+			//2.创建请求,打开连接
+			xhr.open("get","http://127.0.0.1:8080/test/ajax",true);
+			//3.发送请求
+			xhr.send();
+			//4.接收响应
+		}
+	</script>
+ </head>
+ <body>
+		<button onclick="show()">提交请求</button>
+ </body>
+</html>
